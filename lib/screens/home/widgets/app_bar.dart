@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:nasa_tlx/widgets/icon_link.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBar({Key? key}) : super(key: key);
@@ -11,14 +11,10 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: const Text("Nasa TLX"),
       actions: [
-        IconButton(
-            onPressed: () async {
-              const url = "https://github.com/vinothpandian/nasa_tlx";
-              if (await canLaunch(url)) {
-                await launch(url);
-              }
-            },
-            icon: Image.asset("assets/icons/github.png"))
+        IconLink(
+          url: "https://github.com/vinothpandian/nasa_tlx",
+          icon: Image.asset("assets/icons/github.png"),
+        )
       ],
     );
   }

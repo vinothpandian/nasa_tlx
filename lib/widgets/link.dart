@@ -5,11 +5,13 @@ class Link extends StatelessWidget {
   const Link({
     Key? key,
     required this.text,
-    required this.url,
+    required this.to,
+    this.isRouterLink = true,
   }) : super(key: key);
 
   final String text;
-  final String url;
+  final bool isRouterLink;
+  final String to;
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +24,13 @@ class Link extends StatelessWidget {
             ),
       ),
       onTap: () async {
-        if (await canLaunch(url)) {
-          await launch(url);
+        if (isRouterLink) {
+          Navigator.pushNamed(context, to);
+          return;
+        }
+
+        if (await canLaunch(to)) {
+          await launch(to);
         }
       },
     );
