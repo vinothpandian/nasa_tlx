@@ -6,6 +6,11 @@
         <category android:name="android.intent.category.BROWSABLE" />
         <data android:scheme="https" android:host="github.com" />
     </intent>
+    <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https" android:host="www.termsfeed.com" />
+    </intent>
     </queries>
    <application
         android:label="nasa_tlx"
