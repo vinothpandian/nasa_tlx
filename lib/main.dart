@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'routes/root.dart';
 import 'theme/colors.dart';
@@ -15,8 +16,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'NASA-TLX Workload Study',
       theme: ThemeData(
-          colorScheme:
-              ColorScheme.fromSwatch(primarySwatch: primaryColorSwatch).copyWith(secondary: secondaryColorSwatch)),
+          colorScheme: ColorScheme.fromSwatch(
+            primarySwatch: primaryColorSwatch,
+          ).copyWith(
+            secondary: secondaryColorSwatch,
+          ),
+          textTheme: GoogleFonts.notoSansTextTheme(
+            Theme.of(context).textTheme,
+          )),
       initialRoute: "/",
       routes: routes,
     );
