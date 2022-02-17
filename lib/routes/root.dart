@@ -1,5 +1,5 @@
 import '../screens/dashboard.dart';
-import '../screens/home.dart';
+import '../screens/home/home.dart';
 
 var routes = {
   "/": (context) => const Home(),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/app_bar.dart';
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -10,6 +12,9 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text("Home"));
+    return const Scaffold(
+      appBar: HomeAppBar(),
+      body: Center(child: Text("Home")),
+    );
   }
 }
