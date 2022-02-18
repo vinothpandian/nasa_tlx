@@ -38,6 +38,51 @@ class _HomeState extends State<Home> {
               to: "/about",
               isRouterLink: true,
             ),
+            const SizedBox(height: 16),
+            const Spacer(),
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+              child: Column(children: [
+                ElevatedButton(
+                  child: const Text("Login or Register"),
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(minimumSize: const Size.fromHeight(48)),
+                ),
+                const SizedBox(height: 16),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: const [
+                    Expanded(child: Divider(indent: 8, endIndent: 8, color: Colors.black45)),
+                    Text("or"),
+                    Expanded(child: Divider(indent: 8, endIndent: 8, color: Colors.black45)),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    IconButton(
+                      iconSize: 40,
+                      onPressed: () {},
+                      icon: Image.asset("assets/icons/google.png"),
+                    ),
+                    const SizedBox(width: 16),
+                    IconButton(
+                      iconSize: 40,
+                      onPressed: () {},
+                      icon: Image.asset("assets/icons/facebook.png"),
+                    ),
+                    const SizedBox(width: 16),
+                    IconButton(
+                      iconSize: 40,
+                      onPressed: () {},
+                      icon: Image.asset("assets/icons/twitter.png"),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+              ]),
+            ),
             const Spacer(),
             const Link(
               text: "Privacy Policy",

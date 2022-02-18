@@ -61,6 +61,9 @@ flutter:
   assets:
     - assets/images/tlx_logo.png
     - assets/icons/github.png
+    - assets/icons/google.png
+    - assets/icons/facebook.png
+    - assets/icons/twitter.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
