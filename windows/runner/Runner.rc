@@ -89,11 +89,11 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
+            VALUE "CompanyName", "com.cookie-gone-cuckoo" "\0"
             VALUE "FileDescription", "nasa_tlx" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "nasa_tlx" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2022 com.cookie-gone-cuckoo. All rights reserved." "\0"
             VALUE "OriginalFilename", "nasa_tlx.exe" "\0"
             VALUE "ProductName", "nasa_tlx" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
