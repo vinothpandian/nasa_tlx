@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nasa_tlx/auth/utils/facebook.dart';
+import 'package:nasa_tlx/auth/utils/google.dart';
+import 'package:nasa_tlx/auth/utils/twitter.dart';
 import 'package:nasa_tlx/widgets/link.dart';
 
 import 'widgets/app_bar.dart';
@@ -63,19 +66,25 @@ class _HomeState extends State<Home> {
                   children: [
                     IconButton(
                       iconSize: 40,
-                      onPressed: () {},
+                      onPressed: () async {
+                        await signInWithGoogle();
+                      },
                       icon: Image.asset("assets/icons/google.png"),
                     ),
                     const SizedBox(width: 16),
                     IconButton(
                       iconSize: 40,
-                      onPressed: () {},
+                      onPressed: () async {
+                        await signInWithFacebook();
+                      },
                       icon: Image.asset("assets/icons/facebook.png"),
                     ),
                     const SizedBox(width: 16),
                     IconButton(
                       iconSize: 40,
-                      onPressed: () {},
+                      onPressed: () async {
+                        await signInWithTwitter();
+                      },
                       icon: Image.asset("assets/icons/twitter.png"),
                     ),
                   ],
